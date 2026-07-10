@@ -39,7 +39,7 @@ AUR=$(command -v paru || command -v yay)
 msg "Installing caelestia with all extras"
 "$AUR" -S --needed --noconfirm caelestia-cli
 # NOTE: verify flag names with `caelestia install -h` before first real use
-caelestia install --noconfirm --discord --spotify --zen --vscode=code
+caelestia install --noconfirm
 
 # ─── Personal dotfiles ───────────────────────────────────────
 msg "Restoring personal dotfiles"
