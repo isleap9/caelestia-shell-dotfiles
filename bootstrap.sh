@@ -29,8 +29,8 @@ sudo pacman -S --needed --noconfirm base-devel git fish
 if ! command -v paru &>/dev/null && ! command -v yay &>/dev/null; then
     msg "Installing paru"
     tmpdir=$(mktemp -d)
-    git clone https://aur.archlinux.org/paru-bin.git "$tmpdir/paru"
-    (cd "$tmpdir/paru-bin" && makepkg -si --noconfirm)
+    git clone https://aur.archlinux.org/paru.git "$tmpdir/paru"
+    (cd "$tmpdir/paru" && makepkg -si --noconfirm)
     rm -rf "$tmpdir"
 fi
 AUR=$(command -v paru || command -v yay)
