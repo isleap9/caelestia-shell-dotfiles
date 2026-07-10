@@ -5,7 +5,7 @@ set -euo pipefail
 
 # ─── EDIT IF NEEDED ──────────────────────────────────────────
 DOTFILES_REPO="https://github.com/isleap9/caelestia-shell-dotfiles"
-DOTFILES_DIR="$HOME/Documents/caelestia-shell-dotfiles"
+DOTFILES_DIR="$HOME/Documents/GitHub/caelestia-shell-dotfiles"
 
 EXTRA_PKGS="firefox micro fastfetch htop unzip gcc make cmake git nano vim \
 power-profiles-daemon rust wget curl perl \
@@ -26,7 +26,7 @@ msg "Installing base tools"
 sudo pacman -S --needed --noconfirm base-devel git fish
 
 # ─── AUR helper (paru) ───────────────────────────────────────
-if ! command -v paru &>/dev/null && ! command -v yay &>/dev/null; then
+if ! paru --version &>/dev/null && ! yay --version &>/dev/null; then
     msg "Installing paru"
     tmpdir=$(mktemp -d)
     git clone https://aur.archlinux.org/paru.git "$tmpdir/paru"
