@@ -97,6 +97,7 @@ power-profiles-daemon
 python-google-auth
 python-protobuf
 qt6-virtualkeyboard
+reaper
 ripgrep
 rust
 samba

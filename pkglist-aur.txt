@@ -12,6 +12,7 @@ lib32-gstreamer
 papirus-folders
 paru
 paru-debug
+peazip
 qtengine
 sddm-silent-theme
 spicetify-cli
