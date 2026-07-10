@@ -6,7 +6,7 @@ set -euo pipefail
 DOTFILES_DIR="$HOME/Documents/caelestia-shell-dotfiles"
 
 # Which ~/.config folders to track — edit this list
-CONFIGS=(caelestia fish)
+CONFIGS=(caelestia fish hypr)
 
 # Track wallpapers too? (comment out to skip)
 WALLPAPERS_DIR="$HOME/Pictures/Wallpapers"
