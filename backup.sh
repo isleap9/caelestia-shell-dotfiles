@@ -3,7 +3,7 @@
 # Rerun anytime you change something.
 set -euo pipefail
 
-DOTFILES_DIR="$HOME/Documents/caelestia-shell-dotfiles"
+DOTFILES_DIR="$HOME/Documents/GitHub/caelestia-shell-dotfiles/"
 
 # Which ~/.config folders to track — edit this list
 CONFIGS=(caelestia fish hypr)
