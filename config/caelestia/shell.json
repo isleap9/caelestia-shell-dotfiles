@@ -5,7 +5,30 @@
         }
     },
     "background": {
-        "wallpaperEnabled": true
+        "desktopClock": {
+            "background": {
+                "blur": true,
+                "enabled": false,
+                "opacity": 0.7
+            },
+            "enabled": true,
+            "invertColors": false,
+            "position": "bottom-right",
+            "scale": 1,
+            "shadow": {
+                "blur": 0.4,
+                "enabled": true,
+                "opacity": 0.7
+            }
+        },
+        "enabled": true,
+        "visualiser": {
+            "autoHide": true,
+            "blur": false,
+            "enabled": true,
+            "rounding": 1,
+            "spacing": 1
+        }
     },
     "bar": {
         "clock": {
@@ -38,7 +61,7 @@
     "general": {
         "apps": {
             "explorer": [
-                "dolphin"
+                "thunar"
             ]
         }
     },
