@@ -2,6 +2,7 @@ adw-gtk-theme
 alsa-plugins
 alsa-utils
 amd-ucode
+aubio
 base
 base-devel
 bat

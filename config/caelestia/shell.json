@@ -1,6 +1,7 @@
 {
     "appearance": {
         "transparency": {
+            "base": 0.8513157894736841,
             "enabled": true
         }
     },
@@ -28,9 +29,14 @@
             "enabled": true,
             "rounding": 1,
             "spacing": 1
-        }
+        },
+        "wallpaperEnabled": true
     },
     "bar": {
+        "activeWindow": {
+            "inverted": true,
+            "showOnHover": true
+        },
         "clock": {
             "background": false,
             "showDate": true
@@ -53,8 +59,11 @@
             "recolour": false
         },
         "workspaces": {
+            "activeIndicator": true,
             "activeTrail": false,
+            "maxWindowIcons": 5,
             "occupiedBg": false,
+            "perMonitorWorkspaces": true,
             "shown": 4
         }
     },

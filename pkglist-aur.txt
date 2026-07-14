@@ -24,6 +24,7 @@ illogical-impulse-toolkit
 illogical-impulse-widgets
 lib32-gst-plugins-base-libs
 lib32-gstreamer
+libcava
 mpvpaper
 papirus-folders
 paru
