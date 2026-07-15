@@ -7,9 +7,11 @@ caelestia-shell
 coolercontrol-bin
 darkly-bin
 equibop-bin
+faugus-launcher
 github-desktop-bin
 google-chrome
 gradia
+heroic-games-launcher-bin
 illogical-impulse-audio
 illogical-impulse-backlight
 illogical-impulse-basic
@@ -30,6 +32,7 @@ papirus-folders
 paru
 paru-debug
 peazip
+proton-ge-custom-bin
 python312
 qtengine
 quickshell-git
@@ -40,7 +43,9 @@ spicetify-marketplace-bin
 spotify
 todoist-appimage
 ttf-league-gothic
+ttf-material-symbols-variable-git
 ttf-phosphor-icons
+ttf-rubik-vf
 virtualbox-ext-oracle
 vscodium-bin
 vscodium-bin-marketplace
