@@ -1,3 +1,4 @@
+akari-tool
 app2unit
 arch-update
 bibata-cursor-theme
@@ -33,6 +34,7 @@ paru
 paru-debug
 peazip
 proton-ge-custom-bin
+protonup-qt
 python312
 qtengine
 quickshell-git

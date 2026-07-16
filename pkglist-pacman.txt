@@ -64,6 +64,7 @@ lib32-libxslt
 lib32-mangohud
 lib32-mesa
 lib32-mpg123
+lib32-nvidia-utils
 lib32-ocl-icd
 lib32-openal
 lib32-sdl2-compat
@@ -74,6 +75,8 @@ libpulse
 linux
 linux-firmware
 linux-headers
+linux-zen
+linux-zen-headers
 liquidctl
 lutris
 make
@@ -103,6 +106,7 @@ pipewire-pulse
 plasma-browser-integration
 polkit-gnome
 power-profiles-daemon
+proton-vpn-gtk-app
 protontricks
 pyside6
 python-google-auth
