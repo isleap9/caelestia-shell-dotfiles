@@ -6,7 +6,7 @@ set -euo pipefail
 DOTFILES_DIR="$HOME/Documents/GitHub/caelestia-shell-dotfiles/"
 
 # Which ~/.config folders to track — edit this list
-CONFIGS=(caelestia fish hypr)
+CONFIGS=(caelestia fish hypr arch-update)
 
 # Track wallpapers too? (comment out to skip)
 WALLPAPERS_DIR="$HOME/Pictures/Wallpapers"
@@ -21,6 +21,9 @@ for c in "${CONFIGS[@]}"; do
         echo "skipped (not found): $c"
     fi
 done
+
+# ─── single files from ~/.config ─────────────────────────────
+cp ~/.config/xdg-terminals.list "$DOTFILES_DIR/config/" 2>/dev/null || true
 
 if [[ -n ${WALLPAPERS_DIR:-} && -d $WALLPAPERS_DIR ]]; then
     mkdir -p "$DOTFILES_DIR/wallpapers"

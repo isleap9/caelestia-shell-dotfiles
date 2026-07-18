@@ -11,9 +11,10 @@ EXTRA_PKGS="firefox micro fastfetch htop unzip gcc make cmake git nano vim \
 power-profiles-daemon rust wget curl perl \
 linux-headers nvidia-dkms nvidia-utils nvidia-settings \
 ttf-jetbrains-mono-nerd ttf-firacode-nerd ttf-nerd-fonts-symbols \
-otf-font-awesome noto-fonts-cjk greetd greetd-tuigreet"
+otf-font-awesome noto-fonts-cjk tumbler ffmpegthumbnailer gst-libav gvfs greetd greetd-tuigreet"
 
-EXTRA_AUR_PKGS="bibata-cursor-theme ttf-rubik-vf ttf-google-sans google-chrome"
+# add akari-tool here once it's actually published on the AUR
+EXTRA_AUR_PKGS="bibata-cursor-theme ttf-rubik-vf ttf-google-sans google-chrome arch-update akari-tool"
 # ─────────────────────────────────────────────────────────────
 
 msg() { printf '\n\033[1;35m==> %s\033[0m\n' "$*"; }
@@ -36,9 +37,8 @@ fi
 AUR=$(command -v paru || command -v yay)
 
 # ─── Caelestia (all extras) ──────────────────────────────────
-msg "Installing caelestia with all extras"
+msg "Installing caelestia"
 "$AUR" -S --needed --noconfirm caelestia-cli
-# NOTE: verify flag names with `caelestia install -h` before first real use
 caelestia install
 
 # ─── Personal dotfiles ───────────────────────────────────────
@@ -59,6 +59,9 @@ if [[ -d $DOTFILES_DIR/config ]]; then
     done
 fi
 
+# Single files
+[[ -f $DOTFILES_DIR/config/xdg-terminals.list ]] && cp "$DOTFILES_DIR/config/xdg-terminals.list" "$HOME/.config/"
+
 # Wallpapers
 if [[ -d $DOTFILES_DIR/wallpapers ]]; then
     mkdir -p "$HOME/Pictures/Wallpapers"
@@ -74,7 +77,6 @@ msg "Installing extra packages"
 # ─── Login manager (greetd + tuigreet) ───────────────────────
 msg "Configuring greetd"
 if [[ -f $DOTFILES_DIR/etc/greetd/config.toml ]]; then
-    # Use your own config if it's in the repo
     sudo install -Dm644 "$DOTFILES_DIR/etc/greetd/config.toml" /etc/greetd/config.toml
 else
     sudo tee /etc/greetd/config.toml >/dev/null <<'EOF'
@@ -90,5 +92,6 @@ sudo systemctl enable greetd
 
 # ─── Services ────────────────────────────────────────────────
 sudo systemctl enable power-profiles-daemon
+systemctl --user enable arch-update.timer || true
 
 msg "All done! Reboot and greetd/tuigreet will log you into Hyprland."
