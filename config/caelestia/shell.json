@@ -34,12 +34,16 @@
     },
     "bar": {
         "activeWindow": {
+            "compact": false,
             "inverted": true,
             "showOnHover": true
         },
         "clock": {
-            "background": false,
+            "background": true,
             "showDate": true
+        },
+        "popouts": {
+            "statusIcons": true
         },
         "scrollActions": {
             "volume": true,
@@ -54,7 +58,7 @@
             "showWifi": false
         },
         "tray": {
-            "background": false,
+            "background": true,
             "compact": false,
             "recolour": false
         },
@@ -64,6 +68,8 @@
             "maxWindowIcons": 5,
             "occupiedBg": false,
             "perMonitorWorkspaces": true,
+            "showWindows": true,
+            "showWindowsOnSpecialWorkspaces": true,
             "shown": 4
         }
     },
@@ -74,8 +80,16 @@
             ]
         }
     },
+    "launcher": {
+        "showOnHover": false,
+        "useFuzzy": {
+            "apps": false,
+            "wallpapers": false
+        }
+    },
     "services": {
-        "useFahrenheit": false
+        "useFahrenheit": false,
+        "useTwelveHourClock": true
     },
     "sidebar": {
         "enabled": true
