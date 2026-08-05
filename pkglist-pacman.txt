@@ -12,6 +12,7 @@ brightnessctl
 btop
 btrfs-assistant
 btrfs-progs
+chafa
 cliphist
 cmake
 code
@@ -54,6 +55,7 @@ gvfs-mtp
 htop
 hyprland
 hyprpicker
+jp2a
 jq
 lazygit
 lib32-alsa-plugins
@@ -81,6 +83,7 @@ linux-zen-headers
 lutris
 mangohud
 micro
+mission-center
 mkinitcpio
 nano
 networkmanager
@@ -94,10 +97,12 @@ nwg-displays
 nwg-look
 obs-studio
 ollama
+opencode
 os-prober
 otf-font-awesome
 papirus-icon-theme
 pavucontrol
+peazip
 pipewire
 pipewire-alsa
 pipewire-audio
@@ -108,6 +113,8 @@ proton-vpn-gtk-app
 protontricks
 python-pip
 qemu-full
+qt6-multimedia
+qt6-multimedia-ffmpeg
 reaper
 reflector
 ripgrep

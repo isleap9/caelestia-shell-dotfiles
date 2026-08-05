@@ -9,3 +9,8 @@ hl.workspace_rule({ workspace = "5", monitor = "DP-2", default = true })
 -- Force Steam games onto the main monitor
 
 hl.window_rule({ match = { class = "steam_app_.*|hl_linux|cs2|gamescope" }, monitor = "DP-3" })
+
+
+hl.on("hyprland.start", function()
+    hl.exec_cmd("sh -c 'until busctl --user list | grep -q StatusNotifierWatcher; do sleep 0.5; done; exec arch-update --tray'")
+end)

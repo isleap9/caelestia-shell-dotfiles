@@ -2,7 +2,6 @@ akari-tool
 app2unit
 arch-update
 bibata-cursor-theme
-caelestia-cli
 caelestia-firefox-theme
 caelestia-shell
 coolercontrol-bin
@@ -12,10 +11,10 @@ github-desktop-bin
 google-chrome
 heroic-games-launcher-bin
 libcava
+opencode-desktop-bin
 papirus-folders
 paru
 paru-debug
-peazip
 protonup-qt
 qtengine
 spicetify-cli

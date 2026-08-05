@@ -1,0 +1,214 @@
+{
+    "ai": {
+        "defaultOllamaModel": "gemma4:e4b"
+    },
+    "appearance": {
+        "islands": false,
+        "pitchBlack": false,
+        "transparency": {
+            "base": 0.8513157894736841,
+            "enabled": true
+        }
+    },
+    "audio": {
+        "sounds": {
+            "cameraClick": true,
+            "lock": true
+        }
+    },
+    "background": {
+        "desktopClock": {
+            "background": {
+                "blur": true,
+                "enabled": false,
+                "opacity": 0.7
+            },
+            "enabled": true,
+            "invertColors": false,
+            "position": "bottom-right",
+            "scale": 1,
+            "shadow": {
+                "blur": 0.4,
+                "enabled": true,
+                "opacity": 0.7
+            }
+        },
+        "desktopLyrics": {
+            "enabled": true
+        },
+        "enabled": true,
+        "videoWallpaperPaused": false,
+        "videoWallpaperSoundEnabled": false,
+        "visualiser": {
+            "autoHide": true,
+            "blur": false,
+            "enabled": true,
+            "rounding": 1,
+            "spacing": 1
+        },
+        "wallpaperEnabled": true,
+        "wallpaperRecolor": false
+    },
+    "bar": {
+        "activeWindow": {
+            "inverted": true,
+            "showOnHover": true
+        },
+        "clock": {
+            "background": false,
+            "showDate": true
+        },
+        "dock": {
+            "monitorCenter": true,
+            "recolourIcons": false
+        },
+        "entries": [
+            {
+                "enabled": true,
+                "id": "logo"
+            },
+            {
+                "enabled": true,
+                "id": "workspaces"
+            },
+            {
+                "enabled": true,
+                "id": "spacer"
+            },
+            {
+                "enabled": true,
+                "id": "activeWindow"
+            },
+            {
+                "enabled": true,
+                "id": "spacer"
+            },
+            {
+                "enabled": true,
+                "id": "tray"
+            },
+            {
+                "enabled": true,
+                "id": "github"
+            },
+            {
+                "enabled": true,
+                "id": "clock"
+            },
+            {
+                "enabled": true,
+                "id": "statusIcons"
+            },
+            {
+                "enabled": true,
+                "id": "power"
+            }
+        ],
+        "github": {
+            "background": false
+        },
+        "position": "left",
+        "scrollActions": {
+            "volume": true,
+            "workspaces": true
+        },
+        "status": {
+            "showAudio": true,
+            "showBattery": false,
+            "showBluetooth": true,
+            "showKbLayout": true,
+            "showMicrophone": true,
+            "showWifi": false
+        },
+        "tray": {
+            "background": false,
+            "compact": false,
+            "recolour": false
+        },
+        "workspaces": {
+            "activeIndicator": true,
+            "activeTrail": false,
+            "maxWindowIcons": 5,
+            "occupiedBg": false,
+            "perMonitorWorkspaces": true,
+            "shown": 4
+        }
+    },
+    "dashboard": {
+        "colorizeMediaGif": true,
+        "profilePicShape": 0,
+        "replaceMediaLyricsWithVisuals": true,
+        "syncMediaShapesToBeat": true,
+        "useMediaShapes": false
+    },
+    "general": {
+        "apps": {
+            "explorer": [
+                "thunar"
+            ]
+        }
+    },
+    "launcher": {
+        "favouriteClips": [
+            "345"
+        ]
+    },
+    "services": {
+        "pipFollowFocus": false,
+        "pipPaused": false,
+        "useFahrenheit": false
+    },
+    "shimeji": {
+        "enabled": false
+    },
+    "sidebar": {
+        "enabled": true
+    },
+    "utilities": {
+        "quickToggles": [
+            {
+                "enabled": true,
+                "id": "wifi"
+            },
+            {
+                "enabled": true,
+                "id": "bluetooth"
+            },
+            {
+                "enabled": true,
+                "id": "quickshare"
+            },
+            {
+                "enabled": true,
+                "id": "mic"
+            },
+            {
+                "enabled": true,
+                "id": "settings"
+            },
+            {
+                "enabled": true,
+                "id": "gameMode"
+            },
+            {
+                "enabled": true,
+                "id": "dnd"
+            },
+            {
+                "enabled": false,
+                "id": "vpn"
+            },
+            {
+                "enabled": true,
+                "id": "wallpaper"
+            },
+            {
+                "enabled": true,
+                "id": "badapple"
+            }
+        ],
+        "toasts": {
+            "transparency": true
+        }
+    }
+}
