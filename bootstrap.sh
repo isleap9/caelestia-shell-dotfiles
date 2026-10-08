@@ -14,7 +14,7 @@ ttf-jetbrains-mono-nerd ttf-firacode-nerd ttf-nerd-fonts-symbols \
 otf-font-awesome noto-fonts-cjk tumbler ffmpegthumbnailer gst-libav gvfs greetd greetd-tuigreet"
 
 # add akari-tool here once it's actually published on the AUR
-EXTRA_AUR_PKGS="bibata-cursor-theme ttf-rubik-vf ttf-google-sans google-chrome arch-update akari-tool"
+EXTRA_AUR_PKGS="bibata-cursor-theme ttf-rubik-vf ttf-google-sans google-chrome arch-update"
 # ─────────────────────────────────────────────────────────────
 
 msg() { printf '\n\033[1;35m==> %s\033[0m\n' "$*"; }
