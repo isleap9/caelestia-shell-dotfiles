@@ -25,6 +25,19 @@ done
 # ─── single files from ~/.config ─────────────────────────────
 cp ~/.config/xdg-terminals.list "$DOTFILES_DIR/config/" 2>/dev/null || true
 
+# ─── local desktop overrides (foot wrappers) ───────────────────
+# Tracked apps that shadow /usr/share/applications/*.desktop
+APPS=(micro arch-update)
+mkdir -p "$DOTFILES_DIR/applications"
+for a in "${APPS[@]}"; do
+    if [[ -f $HOME/.local/share/applications/$a.desktop ]]; then
+        cp "$HOME/.local/share/applications/$a.desktop" "$DOTFILES_DIR/applications/"
+        echo "synced: applications/$a.desktop"
+    else
+        echo "skipped (not found): applications/$a.desktop"
+    fi
+done
+
 if [[ -n ${WALLPAPERS_DIR:-} && -d $WALLPAPERS_DIR ]]; then
     mkdir -p "$DOTFILES_DIR/wallpapers"
     cp -rT "$WALLPAPERS_DIR" "$DOTFILES_DIR/wallpapers"

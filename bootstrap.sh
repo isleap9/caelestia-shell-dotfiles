@@ -7,7 +7,7 @@ set -euo pipefail
 DOTFILES_REPO="https://github.com/isleap9/caelestia-shell-dotfiles"
 DOTFILES_DIR="$HOME/Documents/GitHub/caelestia-shell-dotfiles"
 
-EXTRA_PKGS="firefox micro fastfetch htop unzip gcc make cmake git nano vim \
+EXTRA_PKGS="firefox micro foot xdg-terminal-exec fastfetch htop unzip gcc make cmake git nano vim \
 power-profiles-daemon rust wget curl perl \
 linux-headers nvidia-dkms nvidia-utils nvidia-settings \
 ttf-jetbrains-mono-nerd ttf-firacode-nerd ttf-nerd-fonts-symbols \
@@ -61,6 +61,19 @@ fi
 
 # Single files
 [[ -f $DOTFILES_DIR/config/xdg-terminals.list ]] && cp "$DOTFILES_DIR/config/xdg-terminals.list" "$HOME/.config/"
+
+# Local desktop overrides (foot wrappers for Terminal=true apps like micro, arch-update)
+# These shadow /usr/share/applications/*.desktop so right-click/launchers work on
+# Hyprland+Thunar where no xdg-terminal-exec handler would otherwise fail.
+if [[ -d $DOTFILES_DIR/applications ]]; then
+    mkdir -p "$HOME/.local/share/applications"
+    for f in "$DOTFILES_DIR/applications/"*.desktop; do
+        [[ -e $f ]] || continue
+        cp "$f" "$HOME/.local/share/applications/"
+        echo "applied application: $(basename "$f")"
+    done
+    update-desktop-database "$HOME/.local/share/applications" || true
+fi
 
 # Wallpapers
 if [[ -d $DOTFILES_DIR/wallpapers ]]; then

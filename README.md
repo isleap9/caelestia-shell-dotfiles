@@ -105,6 +105,7 @@ Then commit and push (via GitHub Desktop or plain git).
 | `bootstrap.sh` | Fresh-install script — run this |
 | `backup.sh` | Copies live configs back into the repo |
 | `config/` | Contents get overlaid onto `~/.config/` |
+| `applications/` | `*.desktop` files copied to `~/.local/share/applications/` (foot wrappers for `Terminal=true` apps) |
 | `wallpapers/` | Copied to `~/Pictures/Wallpapers` |
 | `pkglist-pacman.txt` | Snapshot of installed repo packages (reference) |
 | `pkglist-aur.txt` | Snapshot of installed AUR packages (reference) |
